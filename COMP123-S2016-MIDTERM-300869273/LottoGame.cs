@@ -162,7 +162,11 @@ namespace COMP123_S2016_MIDTERM_300869273
          */
         private void _build()
             {
-            
+            int count = 0;
+            while (count < SetSize)
+                {
+                this.NumberList.Add(count + 1);
+                }
             }
 
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -194,13 +198,31 @@ namespace COMP123_S2016_MIDTERM_300869273
 
 
 
-        public void PickElements()
-            {
-            throw new System.NotImplementedException();
-            }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE the public PickElements method here ----------------------------
+        /** <summary>
+         * This method clears and rebuilds the NumberList property if the ElementList property is not empty.
+         * </summary>
+         *
+         * @method PickElements
+         * @returns {void}
+         */
+        public void PickElements()
+            {
+            if (this.ElementList.Count > 0)
+                {
+                this.ElementList.Clear();
+                this.NumberList.Clear();
+                this._build();
+                }
+            for (int i = 0; i < this.ElementNumber; i++)
+                {
+                int randomNum = this._random.Next(0, NumberList.Count);
+                int temp = this.NumberList[randomNum];
+                this.NumberList[randomNum].Remove;
+
+                }
+            }
         }
     }
