@@ -17,6 +17,11 @@ namespace COMP123_S2016_MIDTERM_300869273
      */
     public abstract class LottoGame
         {
+        private List<Int32> _elementList;
+        private int _elementNumber;
+        private List<Int32> _numberList;
+        private Random _random;
+        private int _setSize;
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE private fields here --------------------------------------------
@@ -53,6 +58,61 @@ namespace COMP123_S2016_MIDTERM_300869273
             this._build();
             }
 
+        public List<Int32> ElementList
+            {
+            get
+                {
+                throw new System.NotImplementedException();
+                }
+            set
+                {
+                }
+            }
+
+        public int ElementNumber
+            {
+            get
+                {
+                throw new System.NotImplementedException();
+                }
+            set
+                {
+                }
+            }
+
+        public List<Int32> NumberList
+            {
+            get
+                {
+                throw new System.NotImplementedException();
+                }
+            set
+                {
+                }
+            }
+
+        public Random random
+            {
+            get
+                {
+                throw new System.NotImplementedException();
+                }
+            set
+                {
+                }
+            }
+
+        public int SetSize
+            {
+            get
+                {
+                throw new System.NotImplementedException();
+                }
+            set
+                {
+                }
+            }
+
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE the private _initialize method here -----------------------------
@@ -84,6 +144,21 @@ namespace COMP123_S2016_MIDTERM_300869273
                 }
 
             return lottoNumberString;
+            }
+
+        private void _initialize()
+            {
+            throw new System.NotImplementedException();
+            }
+
+        public void _build()
+            {
+            throw new System.NotImplementedException();
+            }
+
+        public void PickElements()
+            {
+            throw new System.NotImplementedException();
             }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

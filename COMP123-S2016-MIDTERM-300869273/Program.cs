@@ -4,6 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * ==================================================================================================
+ * Author: Jonathan Hao
+ * Student#: 300869273
+ * Date Modified: June 24, 2016
+ * Description: This console app contains two lottery games.
+ * Version: 0.0.1 - Documentation added. Class diagram constructed.
+ * ==================================================================================================
+ */
 namespace COMP123_S2016_MIDTERM_300869273
     {
     /**
