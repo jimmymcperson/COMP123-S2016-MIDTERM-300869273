@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * Student#: 300869273
  * Date Modified: June 24, 2016
  * Description: This console app contains two lottery games.
- * Version: 0.0.1 - Documentation added. Class diagram constructed.
+ * Version: 0.0.2 - Organized fields and completed properties for the LottoGame class.
  * ==================================================================================================
  */
 namespace COMP123_S2016_MIDTERM_300869273

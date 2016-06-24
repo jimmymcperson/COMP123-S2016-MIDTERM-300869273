@@ -17,18 +17,93 @@ namespace COMP123_S2016_MIDTERM_300869273
      */
     public abstract class LottoGame
         {
+        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
         private List<Int32> _elementList;
         private int _elementNumber;
         private List<Int32> _numberList;
         private Random _random;
         private int _setSize;
-        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-        // CREATE private fields here --------------------------------------------
 
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE public properties here -----------------------------------------
+        /**<summary>
+        * This property reads the _elementList field.
+        * </summary>
+        *
+        * @property ElementList
+        */
+        public List<Int32> ElementList
+            {
+            get
+                {
+                return this._elementList;
+                }
+            }
+
+        /**<summary>
+        * This property reads/writes the _elementNumber field.
+        * </summary>
+        *
+        * @property ElementNumber
+        */
+        public int ElementNumber
+            {
+            get
+                {
+                return this.ElementNumber;
+                }
+            set
+                {
+                this.ElementNumber = value;
+                }
+            }
+
+        /**<summary>
+        * This property reads the _numberList field.
+        * </summary>
+        *
+        * @property NumberList
+        */
+        public List<Int32> NumberList
+            {
+            get
+                {
+                return this._numberList;
+                }
+            }
+
+        /**<summary>
+        * This property reads the _random field.
+        * </summary>
+        *
+        * @property random
+        */
+        public Random random
+            {
+            get
+                {
+                return this._random;
+                }
+            }
+
+        /**<summary>
+        * This property reads/writes the _setSize field.
+        * </summary>
+        *
+        * @property SetSize
+        */
+        public int SetSize
+            {
+            get
+                {
+                return this._setSize;
+                }
+            set
+                {
+                this._setSize = value;
+                }
+            }
 
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -58,66 +133,37 @@ namespace COMP123_S2016_MIDTERM_300869273
             this._build();
             }
 
-        public List<Int32> ElementList
-            {
-            get
-                {
-                throw new System.NotImplementedException();
-                }
-            set
-                {
-                }
-            }
 
-        public int ElementNumber
-            {
-            get
-                {
-                throw new System.NotImplementedException();
-                }
-            set
-                {
-                }
-            }
-
-        public List<Int32> NumberList
-            {
-            get
-                {
-                throw new System.NotImplementedException();
-                }
-            set
-                {
-                }
-            }
-
-        public Random random
-            {
-            get
-                {
-                throw new System.NotImplementedException();
-                }
-            set
-                {
-                }
-            }
-
-        public int SetSize
-            {
-            get
-                {
-                throw new System.NotImplementedException();
-                }
-            set
-                {
-                }
-            }
 
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE the private _initialize method here -----------------------------
+        /** <summary>
+         * This method instantiates new objects for the private fields: _numberList, _elementList, _random.
+         * </summary>
+         * 
+         * @Method _initialize
+         * @private
+         * @returns {void}
+         */
+        private void _initialize()
+            {
+            List<Int32> _numberList = new List<Int32>();
+            List<Int32> _elementList = new List<Int32>();
+            Random _random = new Random();
+            }
 
-        // CREATE the private _build method here -----------------------------------
+        /** <summary>
+         * This method Adds Interger Literals from 1 to SetSize to the NumberList property.
+         * </summary>
+         * 
+         * @Method _build
+         * @private
+         * @returns {void}
+         */
+        private void _build()
+            {
+            
+            }
 
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -146,15 +192,7 @@ namespace COMP123_S2016_MIDTERM_300869273
             return lottoNumberString;
             }
 
-        private void _initialize()
-            {
-            throw new System.NotImplementedException();
-            }
 
-        public void _build()
-            {
-            throw new System.NotImplementedException();
-            }
 
         public void PickElements()
             {
